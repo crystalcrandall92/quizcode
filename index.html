@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+        <div id="box" class="container">
+            <a href="highscore.html">View Highscores!</a>
+            <div id="timer">120</div>
+            <div class="title">Code Quiz</div>
+            <div id="paragraph"><p>Try to answer the following questions correctly and within the time limit to get the highest score. For every answer you get wrong you will lose 10 seconds off the clock. The highest score is the one with the most time remaining on the clock. Good luck!</p></div>
+            <button id="startButton">Start Quiz!</button>
+            <div id="quizblock" class="hide"></class>
+            <div id="question" class="question"></div>
+            <label class="answer"><input type="radio" name="answer" value="1" /> <span id="ans1"></span></label>
+            <label class="answer"><input type="radio" name="answer" value="2" /> <span id="ans2"></span></label>
+            <label class="answer"><input type="radio" name="answer" value="3" /> <span id="ans3"></span></label>
+            <label class="answer"><input type="radio" name="answer" value="4" /> <span id="ans4"></span></label>
+            <br>
+            <button id="nextQuestion" class="next-btn" onclick="loadNewQuestion();">Next Question</button>
+            </div>
+        </div>
+        <div id="totalScore" class="container result" style="display:none;">
+        </div>
+        <script src="question.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>

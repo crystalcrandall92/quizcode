@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(36, 36, 187, 0.452)
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    padding: 45px;
+}
+
+.resultCont {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 45px;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+}
+
+.question{
+    font-size: 20px;
+}
+
+.answer {
+    width: 470px;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
+    margin: 10px 10px 10px 10px;
+}
+
+.answer:hover {
+    background-color: rgba(82, 82, 218, 0.575);
+}
+
+.next-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px black;
+    outline: 1px black;
+    background-color: rgba(82, 82, 218, 0.26);
+    float: right;
+}
+
+.next-btn:hover{
+    background-color: rgba(82, 82, 218, 0.575);
+}
+
+.result {
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+
+#timer {
+    float: right;
+}
+
+#goBackwards {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px black;
+    outline: 1px black;
+    background-color: rgba(82, 82, 218, 0.26);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    float: right;
+}
+
+#clearStorage {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px black;
+    outline: 1px black;
+    background-color: rgba(82, 82, 218, 0.26);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    float: right;
+}
+
+#startButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px black;
+    outline: 1px black;
+    background-color: rgba(82, 82, 218, 0.26);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show{
+    display:inherit;
+  }

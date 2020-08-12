@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Highscores</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="currentTime"></div>
+            <h1>Highscores!</h1>
+            <ul id="highScores"></ul>
+            <button id="goBackwards">Go Back</button>
+            <button id="clearStorage">Clear Highscores</button>
+    </div>
+
+<!-- Javascript starts here -->
+<script>
+    var clearStorage = document.querySelector("#clearStorage");
+    var goBackwards = document.querySelector("#goBackwards");
+
+/* buttons for clear and go back */ 
+        clearStorage.addEventListener("click", function() {
+            localStorage.clear();
+            location.reload();
+        });
+
+        goBackwards.addEventListener("click", function (){
+            window.location.replace("index.html")
+        });
+
+</script>
+</body>
+
+</html>
